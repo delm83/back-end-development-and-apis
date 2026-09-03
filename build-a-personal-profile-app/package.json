@@ -1,0 +1,19 @@
+{
+  "name": "build-a-personal-profile-app",
+  "version": "1.0.0",
+  "description": "This package is used to manage a personal profile",
+  "keywords": [
+    "personal",
+    "profile"
+  ],
+  "license": "ISC",
+  "author": "Derek Mudie",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
