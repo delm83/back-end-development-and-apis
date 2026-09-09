@@ -12,7 +12,20 @@ app.get("/", (_req, res) => {
 });
 
 // Do not change code above this line
-
+// The {/:date} tells Express that the slash and the date are both optional
+app.get("/api{/:date}", (req, res) => {
+  let dateInput = req.params.date;
+  let dateOutput;
+  
+  // return current date if string is empty
+  !dateInput ? dateOutput = new Date()
+  : isNaN(dateInput) ? dateOutput = new Date(dateInput)
+  : dateOutput = new Date(parseInt(dateInput));
+  
+  dateOutput.toString() === 'Invalid Date' 
+    ? res.json({ error: "Invalid Date" })
+    : res.json({ unix: dateOutput.getTime(), utc: dateOutput.toUTCString() });
+});
 // Do not change code below this line
 
 const PORT = 8000;

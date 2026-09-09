@@ -2,6 +2,14 @@
   "name": "build-a-timestamp-microservice",
   "version": "0.0.1",
   "description": "freeCodeCamp Certification Project",
+  "keywords": [
+    "node",
+    "express",
+    "freecodecamp"
+  ],
+  "license": "MIT",
+  "author": "Derek Mudie",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,12 +17,5 @@
   "dependencies": {
     "cors": "2.8.5",
     "express": "5.2.1"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "freecodecamp"
-  ],
-  "license": "MIT",
-  "type": "module"
+  }
 }
