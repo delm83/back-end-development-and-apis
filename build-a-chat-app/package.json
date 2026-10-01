@@ -2,6 +2,13 @@
   "name": "build-a-chat-app",
   "version": "0.0.1",
   "description": "freeCodeCamp Certification Project",
+  "keywords": [
+    "node",
+    "freecodecamp"
+  ],
+  "license": "MIT",
+  "author": "Derek Mudie",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,10 +16,5 @@
   "dependencies": {
     "ws": "8.20.0"
   },
-  "keywords": [
-    "node",
-    "freecodecamp"
-  ],
-  "license": "MIT",
-  "type": "module"
+  "devDependencies": {}
 }
